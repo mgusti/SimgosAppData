@@ -1,7 +1,7 @@
 services:
   app:
     build:
-      context: ..
+      context: .
       dockerfile: docker/Dockerfile
     container_name: simgos-app
     dns:
@@ -11,8 +11,8 @@ services:
     ports:
       - "8080:80" # Access Laravel app at http://localhost:8080
     volumes:
-      - ../:/var/www/html
-      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./:/var/www/html
+      - ./docker/php.ini:/usr/local/etc/php/conf.d/custom.ini
     depends_on:
       - db
     environment:
@@ -33,7 +33,7 @@ services:
       MYSQL_PASSWORD: laravelpass
     volumes:
       - db_data:/var/lib/mysql
-      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./docker/mysql/conf.d:/etc/mysql/conf.d
 
 volumes:
   db_data:
