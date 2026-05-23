@@ -50,7 +50,11 @@ Di folder database, Anda akan menemukan usersimgos.sql, yang berisi struktur unt
 
     6. Buat database usersimgos di server MySQL Anda.
         Impor file usersimgos.sql menggunakan salah satu metode berikut:
-        Terminal: Jalankan mysql -u [username] -p usersimgos < usersimgos.sql.
+        Terminal lokal: Jalankan mysql -u [username] -p usersimgos < usersimgos.sql.
+        Jika menggunakan Docker, jalankan:
+        a. docker compose docker/docker-compose.yml exec -T db mysql -u root -prootpassword usersimgos < usersimgos.sql
+        b. docker compose -f docker/docker-compose.yml exec -T db mysql -u root -prootpassword < simgos.sql
+        Pastikan menggunakan user root saat menjalankan perintah Docker ini.
         Alat GUI: Gunakan DBeaver, HeidiSQL, atau aplikasi serupa.
 
 Kustomisasi:
