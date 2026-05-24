@@ -1,11 +1,3 @@
-# 🚧 Status Proyek
-
-⚠️ **Pengembangan sementara dihentikan**  
-Saat ini pengembang sedang mengerjakan project lain, sehingga repository ini tidak akan mendapatkan update dalam waktu dekat.  
-Kontribusi dari komunitas tetap diterima melalui pull request.
-
----
-
 SimgosAppData adalah aplikasi tambahan yang dirancang untuk melengkapi aplikasi SIMGOS Kemenkes. 
 Aplikasi ini memanfaatkan database SIMGOS, dan untuk database usersimgos dibuat terpisah sebagai 
 tempat penyimpanan informasi pengguna.
@@ -51,10 +43,6 @@ Di folder database, Anda akan menemukan usersimgos.sql, yang berisi struktur unt
     6. Buat database usersimgos di server MySQL Anda.
         Impor file usersimgos.sql menggunakan salah satu metode berikut:
         Terminal lokal: Jalankan mysql -u [username] -p usersimgos < usersimgos.sql.
-        Jika menggunakan Docker, jalankan:
-        a. docker compose docker/docker-compose.yml exec -T db mysql -u root -prootpassword usersimgos < usersimgos.sql
-        b. docker compose -f docker/docker-compose.yml exec -T db mysql -u root -prootpassword < simgos.sql
-        Pastikan menggunakan user root saat menjalankan perintah Docker ini.
         Alat GUI: Gunakan DBeaver, HeidiSQL, atau aplikasi serupa.
 
 Kustomisasi:
@@ -100,6 +88,4 @@ Notes :
 Untuk mengetahui detail perubahan terbaru dapat di lihat pada realease
 
 Lisensi :
-Aplikasi ini dapat digunakan secara bebas dengan harapan identitas pengembang tetap dipertahankan. 
-# SimgosAppData
-# SimgosAppData
+Aplikasi ini dapat digunakan secara bebas dengan harapan identitas pengembang tetap dipertahankan.
