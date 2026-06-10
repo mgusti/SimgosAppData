@@ -19,7 +19,7 @@ export default function Authenticated({ user, children }) {
 
             <footer className="text-black/50 dark:text-gray-200">
                 <div className="text-center">
-                    <p>&copy; 2024 - {new Date().getFullYear()} Hidayat - Tim IT RSUD Dr. M. M. Dunda Limboto.
+                    <p>&copy; 2024 - {new Date().getFullYear()} Gusti - Tim IT RSUD H. Abdul Manap.
                     </p>
                 </div>
             </footer>

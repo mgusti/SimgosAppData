@@ -91,7 +91,7 @@ export default function Print({
                 </div>
                 <footer className="bg-white text-black text-sm">
                     <div className="text-center">
-                        <p>&copy; {new Date().getFullYear()} Hidayat - Tim IT RSUD Dr. M. M. Dunda Limboto. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Gusti - Tim IT RSUD H. Abdul Manap. All rights reserved.</p>
                     </div>
                 </footer>
             </div>

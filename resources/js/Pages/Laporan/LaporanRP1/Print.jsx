@@ -123,7 +123,7 @@ export default function Print({ data, total, dariTanggal, sampaiTanggal, ruangan
                 </div>
                 <footer className="bg-white text-black text-sm">
                     <div className="text-center">
-                        <p>&copy; 2024 - {new Date().getFullYear()} Hidayat - Tim IT RSUD Dr. M. M. Dunda Limboto.</p>
+                        <p>&copy; 2024 - {new Date().getFullYear()} Gusti - Tim IT RSUD H. Abdul Manap.</p>
                     </div>
                 </footer>
             </div>
